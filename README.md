@@ -22,13 +22,13 @@ This is a Software Prototype on Demand Forecasting of perishable goods using mac
 
 ## Brainstorming for Solution
 Initaially we used LSTM model to see if we a can get a proper time series prediction but that doesnt work out good. Accuracy turns out to be bad
-https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Time%20Series%20Prediction%20Lstm.png
+![LSTM](https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Time%20Series%20Prediction%20Lstm.png)
 
 
-https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Time%20Prediction%20LSTM2.png
+![LSTM](https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Time%20Prediction%20LSTM2.png)
 
 Next we hop on to a Simple Neural Network. Again this wouldnt work as it overfitted the data easily and with regularizer it didnt produce results as good as our final competent.
-https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Normal%20Prediction%20NN.png
+![Neural Network] (https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Normal%20Prediction%20NN.png)
 
 And so finally we use a pipeline of Random Forrest Regressor and then a Bayesian Ridge Regression. We divide the whole dataset into smaller ones depending on their MEAL ID as that posed as a stronger feature than CENTER ID.
 
@@ -36,10 +36,10 @@ And so finally we use a pipeline of Random Forrest Regressor and then a Bayesian
 Create a data pipeline with four nodes. The first node gets predicted data, cleans it and engineers features. The second node uses RandomForestRegressor and a BayesianRidgeRegressor on features , all trained on historical data to predict the number of orders for 10 weeks in advance. Along with the features in data set it takes in account to the pattern generated in recent past (the pattern of mean of orders and errors). Taking into consideration the region we can roughly estimate the cuisine type. The third node deploys the predictions and other essential data to a web-based platform for easier conveyance. The final node replaces the historical data, with predicted data and actual data, for the same time and date 2 years back, for better training of the model.
 
 Prediction after Random Forrest Regression
-https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Normal%20Prediction%20Ml.png
+![Random Forrest Regression](https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Normal%20Prediction%20Ml.png)
 
 Prediction after Bayesian Ridge regression
-https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Normal%20Prediction%20ML2.png
+![Bayesian Ridge regression](https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Normal%20Prediction%20ML2.png)
 
 ## Software Designing
 ASo all the models were trained and the respective trained model was saved as separate .sav files. Using NodeJS they were deployed to a web platform. The user uploads an excel file with proper input and gets another excel spreadsheet with  proper output for number of orders, cuisine type and the number of employees required.
