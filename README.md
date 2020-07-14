@@ -18,38 +18,46 @@
 
 ##
 ## Introduction
-This is a Software model on Demand Forecasting of perishable goods using machine learning solutions.
+This is a Software Prototype on Demand Forecasting of perishable goods using machine learning solutions. The project aims to predict number of orders a meal delivery company would receive depending upon the past.
 
 ## Brainstorming for Solution
+Initaially we used LSTM model to see if we a can get a proper time series prediction but that doesnt work out good. Accuracy turns out to be bad
+https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Time%20Series%20Prediction%20Lstm.png
+
+
+https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Time%20Prediction%20LSTM2.png
+
+Next we hop on to a Simple Neural Network. Again this wouldnt work as it overfitted the data easily and with regularizer it didnt produce results as good as our final competent.
+https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Normal%20Prediction%20NN.png
+
+And so finally we use a pipeline of Random Forrest Regressor and then a Bayesian Ridge Regression. We divide the whole dataset into smaller ones depending on their MEAL ID as that posed as a stronger feature than CENTER ID.
 
 ## Proposed Solution
-The machine learning Model solution has been prepared which should have the ability to predict accurately. And the accuracy can be achieved if more data is provided.
-Hence More data Gives More Accuracy in demand Forecasting. (Three years of data is considered for prediction)
-In this model, the demand forecasting for vegetables is predicted.
-The Factors that are taken into consideration for demand forecasting are:-
-Seasonal Changes affect demand forecasting.
-Quantity of the crop arrival also affects.
-Demand also depends on the type of crop. (Onion, Tomato, Potato are considered for demand prediction)
-The region also affects crop demand. (Major cities like Delhi, Mumbai, Chennai, Kolkata,Hyderbad,Bengaluru,Ahmedabad are considered for demand prediction)
-Login and Logout feature has been added to ensure security.
+Create a data pipeline with four nodes. The first node gets predicted data, cleans it and engineers features. The second node uses RandomForestRegressor and a BayesianRidgeRegressor on features , all trained on historical data to predict the number of orders for 10 weeks in advance. Along with the features in data set it takes in account to the pattern generated in recent past (the pattern of mean of orders and errors). Taking into consideration the region we can roughly estimate the cuisine type. The third node deploys the predictions and other essential data to a web-based platform for easier conveyance. The final node replaces the historical data, with predicted data and actual data, for the same time and date 2 years back, for better training of the model.
+
+Prediction after Random Forrest Regression
+https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Normal%20Prediction%20Ml.png
+
+Prediction after Bayesian Ridge regression
+https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Normal%20Prediction%20ML2.png
 
 ## Software Designing
-A solution model has been created using Node-red Application and Watson Stdio.The web App with Machine learning model can provide the Solution prediction accurately.
+ASo all the models were trained and the respective trained model was saved as separate .sav files. Using NodeJS they were deployed to a web platform. The user uploads an excel file with proper input and gets another excel spreadsheet with  proper output for number of orders, cuisine type and the number of employees required.
 
 ## Applications
-- Used in food industries.
-- Used in warehouse management.
-- Machine learning techniques allow predicting the amount of products to be purchased during a defined future period.
-- Compared to traditional demand forecasting methods, machine learning accelerates data processing speed
+- Used in food industries to have a rough idea about the working
+- Used in warehouse management to save raw materials.
+- Used to employ and manage the working of employees
+- Altogether gives the food delivery company a robustness and financial stability
 
 ## Conclusion
-Therefore, our project can be used to predict the price and arrival quantity of perishable food products in future. 
+Our project accurately predicts the number of orders from each area. So as a result, the food delivery company can estimate the total production required and number of employees to deployed to each area. Depending on the cuisine type the raw materials are ordered. Wastage can minimized further.
+
 
 
 ## Future Scope
-The growing demand of Machine Learning (ML) and Artificial Intelligence (AI) in almost every industry is compelling the employees across the globe to learn new skills in Data science. It is said that AI and ML are expected to impact and transform our lives in ways beyond imagination similar to the internet.
-Fortunately for demand planners, ML can now help further improve the forecast from 40% of actual to 70% of actual. 
-Machine Learning can predict future weather patterns at the local level and identify how it connects to local demand patterns. Machine Learning can also determine if a lag exists between the weather changes and the demand of products on a real-time basis. The life cycle of a product plays a critical role in demand forecasting.
+Machine Learning (ML) and Artificial Intelligence (AI) have found their impact in every arenas and walk of life. As was Internet to 80's so is Artificial Inteligence now or even more. It is bound to bring about a new revolution in mankind.
+In this project AI can predict demographic movement and thus can provide a better solution to the problem. It can also predict many other features like weather or any major change in lifestyle of people of a particular area and thus can map their effect on the number of orders. Hypothetically speaking their are countless benefits this project can draw from growing AI.
 
 ## Project Links
 - [App Url](https://meal-delivery-forecast.herokuapp.com/)
