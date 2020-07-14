@@ -28,7 +28,7 @@ Initaially we used LSTM model to see if we a can get a proper time series predic
 ![LSTM](https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Time%20Prediction%20LSTM2.png)
 
 Next we hop on to a Simple Neural Network. Again this wouldnt work as it overfitted the data easily and with regularizer it didnt produce results as good as our final competent.
-![Neural Network] (https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Normal%20Prediction%20NN.png)
+![Neural Network](https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Normal%20Prediction%20NN.png)
 
 And so finally we use a pipeline of Random Forrest Regressor and then a Bayesian Ridge Regression. We divide the whole dataset into smaller ones depending on their MEAL ID as that posed as a stronger feature than CENTER ID.
 
