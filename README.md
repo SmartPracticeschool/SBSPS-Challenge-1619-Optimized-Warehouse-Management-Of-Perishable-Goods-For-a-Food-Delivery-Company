@@ -22,6 +22,7 @@ This is a Software Prototype on Demand Forecasting of perishable goods using mac
 
 ## Brainstorming for Solution
 Initaially we used LSTM model to see if we a can get a proper time series prediction but that doesnt work out good. Accuracy turns out to be bad
+
 ![LSTM](https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Time%20Series%20Prediction%20Lstm.png)
 
 
@@ -42,7 +43,7 @@ Prediction after Bayesian Ridge regression
 ![Bayesian Ridge regression](https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Normal%20Prediction%20ML2.png)
 
 ## Software Designing
-ASo all the models were trained and the respective trained model was saved as separate .sav files. Using NodeJS they were deployed to a web platform. The user uploads an excel file with proper input and gets another excel spreadsheet with  proper output for number of orders, cuisine type and the number of employees required.
+Also all the models were trained and the respective trained model was saved as separate .sav files. Using NodeJS they were deployed to a web platform. The user uploads an excel file with proper input and gets another excel spreadsheet with  proper output for number of orders, cuisine type and the number of employees required.
 
 ## Applications
 - Used in food industries to have a rough idea about the working
@@ -62,6 +63,9 @@ In this project AI can predict demographic movement and thus can provide a bette
 ## Project Links
 - [App Url](https://meal-delivery-forecast.herokuapp.com/)
 - Video Demonstration 
+  -[Web Page](https://drive.google.com/file/d/1do-ZuE6ucV5WKTq6Ny36zK6fRKGC8_i-/view?usp=sharing)
+  -[Working](https://drive.google.com/file/d/1qD1K7Mxexa-Gpx9oyzuZU9-KqRHIUZyP/view?usp=sharing)
+  -[Powerpoint](https://drive.google.com/file/d/10NywlioAOTA_0P9GxibInBeRCgXFwJVf/view?usp=sharing)
 
 ## Reference
 - Data Collected from
@@ -71,7 +75,7 @@ In this project AI can predict demographic movement and thus can provide a bette
 - [Long Short Term Memory](https://en.wikipedia.org/wiki/Long_short-term_memory)
 
 ## Team Members
-| Surya Prakash Mishra (Team Lead) | Risab Agarwal | Somya Jain |
+| Surya Prakash Mishra (Team Lead) | Rishab Agarwal | Somya Jain |
 
 ## Screenshots
 
