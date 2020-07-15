@@ -64,8 +64,10 @@ In this project AI can predict demographic movement and thus can provide a bette
 - [App Url](https://meal-delivery-forecast.herokuapp.com/)
 - Video Demonstration 
   -[Web Page](https://drive.google.com/file/d/1do-ZuE6ucV5WKTq6Ny36zK6fRKGC8_i-/view?usp=sharing)
+  
   -[Working](https://drive.google.com/file/d/1qD1K7Mxexa-Gpx9oyzuZU9-KqRHIUZyP/view?usp=sharing)
-  -[Powerpoint](https://drive.google.com/file/d/10NywlioAOTA_0P9GxibInBeRCgXFwJVf/view?usp=sharing)
+  
+ -[Powerpoint](https://drive.google.com/file/d/10NywlioAOTA_0P9GxibInBeRCgXFwJVf/view?usp=sharing)
 
 ## Reference
 - Data Collected from
@@ -78,4 +80,6 @@ In this project AI can predict demographic movement and thus can provide a bette
 | Surya Prakash Mishra (Team Lead) | Rishab Agarwal | Somya Jain |
 
 ## Screenshots
-
+![Input File](https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Input%20File.png)
+![Web Page](https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Webpage1.png)
+![Result File](https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Webpage1.png)
