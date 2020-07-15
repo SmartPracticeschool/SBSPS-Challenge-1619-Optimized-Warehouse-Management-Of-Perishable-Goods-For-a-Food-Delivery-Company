@@ -80,6 +80,12 @@ In this project AI can predict demographic movement and thus can provide a bette
 | Surya Prakash Mishra (Team Lead) | Rishab Agarwal | Somya Jain |
 
 ## Screenshots
+
+#### InputFile
 ![Input File](https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Input%20File.png)
+
+#### Webpage
 ![Web Page](https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Webpage1.png)
-![Result File](https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Webpage1.png)
+
+#### Result File
+![Result File](https://github.com/SmartPracticeschool/SBSPS-Challenge-1619-Optimized-Warehouse-Management-Of-Perishable-Goods-For-a-Food-Delivery-Company/blob/master/Images/Result.png)
