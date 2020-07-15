@@ -63,11 +63,12 @@ In this project AI can predict demographic movement and thus can provide a bette
 ## Project Links
 - [App Url](https://meal-delivery-forecast.herokuapp.com/)
 - Video Demonstration 
-  -[Web Page](https://drive.google.com/file/d/1do-ZuE6ucV5WKTq6Ny36zK6fRKGC8_i-/view?usp=sharing)
+
+  - [Web Page](https://drive.google.com/file/d/1do-ZuE6ucV5WKTq6Ny36zK6fRKGC8_i-/view?usp=sharing)
   
-  -[Working](https://drive.google.com/file/d/1qD1K7Mxexa-Gpx9oyzuZU9-KqRHIUZyP/view?usp=sharing)
+  - [Working](https://drive.google.com/file/d/1qD1K7Mxexa-Gpx9oyzuZU9-KqRHIUZyP/view?usp=sharing)
   
- -[Powerpoint](https://drive.google.com/file/d/10NywlioAOTA_0P9GxibInBeRCgXFwJVf/view?usp=sharing)
+ - [Powerpoint](https://drive.google.com/file/d/10NywlioAOTA_0P9GxibInBeRCgXFwJVf/view?usp=sharing)
 
 ## Reference
 - Data Collected from
